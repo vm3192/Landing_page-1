@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular");
+
+@font-face {
+  font-family: "Verdana";
+  font-display: swap;
+  src: url("../fonts/verdana.woff") format("woff"), url("../fonts/verdana.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-family: "Verdana";
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.no-webp .wrapper{
+  background: url(../img/Background.png); }
+
+.wrapper {
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.title {
+  color: #ffffff;
+  font-family: "PT Sans Narrow";
+  font-size: 48px;
+  letter-spacing: -1.44px;
+}
+
+.subtitle {
+  color: #9ca0a5;
+  font-size: 12px;
+}
+
+.main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.logo {
+  padding: 50px 0 45px;
+}
+
+.logo__img img {
+  display: block;
+  margin: 0 auto;
+}
+
+.banner__img {
+  position: relative;
+  z-index: 2;
+}
+
+.banner__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.forms {
+  overflow: hidden;
+  margin: 20px 0 50px;
+  height: 285px;
+}
+
+.forms__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 285px;
+}
+
+.forms__register {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0 0 0 57px;
+}
+
+.forms__title {
+  margin: 0 0 10px;
+}
+
+.forms__subtitle {
+  margin: 0 0 11px;
+  line-height: 14px;
+}
+
+.forms__register-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  max-width: 300px;
+}
+
+.forms__register-form input {
+  color: #656a71;
+  font-size: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #2d333c;
+  height: 36px;
+  margin: 0 0 20px;
+  padding: 0 0 0 40px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+}
+
+.forms__register-name {
+  background: url(../img/icons/User.svg) 11px 10px no-repeat;
+}
+
+.forms__register-mail {
+  background: url(../img/icons/Mail.svg) 11px 12px no-repeat;
+}
+
+.forms__other {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.forms__box p {
+  color: #9ca0a5;
+  font-size: 11px;
+}
+
+.forms__other-checkbox {
+  -webkit-transition: ease 0.1s all;
+  -o-transition: ease 0.1s all;
+  transition: ease 0.1s all;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 10px 0;
+  background: url(../img/Checkbox_Unchecked.svg) left center no-repeat;
+  padding: 0 0 0 24px;
+}
+
+.forms__other-checkbox input {
+  margin: 0 8px 0 0;
+  display: none;
+}
+
+.forms__other-checkbox span {
+  color: #9ca0a5;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+.forms__btn button {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 36px;
+  width: 90px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.09);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.09);
+  border: 1px solid #333942;
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#323841), to(#474e58));
+  background-image: -o-linear-gradient(bottom, #323841 0%, #474e58 100%);
+  background-image: linear-gradient(to top, #323841 0%, #474e58 100%);
+}
+
+.forms__btn button:active {
+  opacity: 0.7;
+}
+
+.forms__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.forms__img .forms__left,
+.forms__img .forms__mid,
+.forms__img .forms__right {
+  height: 100%;
+}
+
+.forms__img .forms__left img,
+.forms__img .forms__mid img,
+.forms__img .forms__right img {
+  height: 100%;
+}
+
+.forms__login {
+  padding: 0 0 0 57px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.forms__login-form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  max-width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.forms__login-form input {
+  color: #656a71;
+  font-size: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #2d333c;
+  height: 36px;
+  margin: 0 0 20px;
+  padding: 0 0 0 40px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+}
+
+.forms__login-mail {
+  background: url(../img/icons/User.svg) 11px 10px no-repeat;
+}
+
+.forms__login-password {
+  background: url(../img/icons/Password.svg) 13px 9px no-repeat;
+}
+
+.forms__box p a {
+  color: #9ca0a5;
+  font-size: 11px;
+  text-decoration: underline;
+}
+
+.forms__box p a:hover {
+  text-decoration: none;
+}
+
+.forms__other-checkbox input {
+  margin: 0 8px 0 0;
+}
+
+.active {
+  background: url(../img/2-layers.svg) left center no-repeat;
+}
+
+.bottom-text {
+  padding: 50px 0 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bottom-text p {
+  color: #545f6e;
+  font-size: 11px;
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .forms__register {
+    padding: 0 0 0 10px;
+  }
+
+  .forms__login {
+    padding: 0 0 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .forms {
+    height: auto;
+  }
+
+  .forms__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+  }
+
+  .forms__register {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .forms__register-form {
+    max-width: 100%;
+  }
+
+  .forms__login {
+    width: 100%;
+  }
+
+  .forms__login-form {
+    max-width: 100%;
+  }
+
+  .forms__img {
+    display: none;
+  }
+}
+
+.webp .wrapper{ background: url(../img/Background.webp); }
